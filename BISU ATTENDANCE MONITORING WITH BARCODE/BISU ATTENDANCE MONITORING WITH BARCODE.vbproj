@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{022E5A99-F641-4FF0-96C3-12BFDC0D8CBA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BISU_BILAR_SSG_ATTENDANCE_MONITORING.My.MyApplication</StartupObject>
+    <RootNamespace>BISU_BILAR_SSG_ATTENDANCE_MONITORING</RootNamespace>
+    <AssemblyName>BISU-BILAR SSG ATTENDANCE MONITORING</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BISU-BILAR SSG ATTENDANCE MONITORING.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BISU-BILAR SSG ATTENDANCE MONITORING.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bisu.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>877EF74466A40A919A12F0F0587239F7DD21D663</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BISU-BILAR SSG ATTENDANCE MONITORING_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>..\UI Frameworks\Aforge\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\UI Frameworks\Aforge\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\UI Frameworks\Guna\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\UI Frameworks\Guna\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.Barcode">
+      <HintPath>..\UI Frameworks\Barcode-DLL\MessagingToolkit.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UI Frameworks\MySql\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORM\BubbleNotification.Designer.vb">
+      <DependentUpon>BubbleNotification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\BubbleNotification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\DevContact.Designer.vb">
+      <DependentUpon>DevContact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\DevContact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\EventForm.Designer.vb">
+      <DependentUpon>EventForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\EventForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\loader.Designer.vb">
+      <DependentUpon>loader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\loader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\LoadRecord.Designer.vb">
+      <DependentUpon>LoadRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\LoadRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\reports\crystalAttendance.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crystalAttendance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FORM\reports\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\reports\DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\reports\Attendance_record.Designer.vb">
+      <DependentUpon>Attendance_record.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\reports\Attendance_record.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\search form\searchCourse.Designer.vb">
+      <DependentUpon>searchCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\search form\searchCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\search form\searchEvent.Designer.vb">
+      <DependentUpon>searchEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\search form\searchEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\SelectImgSource.Designer.vb">
+      <DependentUpon>SelectImgSource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\SelectImgSource.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\StudentForm.Designer.vb">
+      <DependentUpon>StudentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\StudentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\userAccountInfo.Designer.vb">
+      <DependentUpon>userAccountInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\userAccountInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULES\ErrorSound.vb" />
+    <Compile Include="MODULES\generateBarCode.vb" />
+    <Compile Include="MODULES\SpeechModule.vb" />
+    <Compile Include="MODULES\SqlConnection.vb" />
+    <Compile Include="MODULES\TriggerNotification.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FORM\BubbleNotification.resx">
+      <DependentUpon>BubbleNotification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\DevContact.resx">
+      <DependentUpon>DevContact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\EventForm.resx">
+      <DependentUpon>EventForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\loader.resx">
+      <DependentUpon>loader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\LoadRecord.resx">
+      <DependentUpon>LoadRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\reports\crystalAttendance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crystalAttendance.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\reports\Attendance_record.resx">
+      <DependentUpon>Attendance_record.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\search form\searchCourse.resx">
+      <DependentUpon>searchCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\search form\searchEvent.resx">
+      <DependentUpon>searchEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\SelectImgSource.resx">
+      <DependentUpon>SelectImgSource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\StudentForm.resx">
+      <DependentUpon>StudentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\userAccountInfo.resx">
+      <DependentUpon>userAccountInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BISU-BILAR SSG ATTENDANCE MONITORING_TemporaryKey.pfx" />
+    <None Include="FORM\reports\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FORM\reports\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="FORM\reports\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bisu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sampleBARCode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dr-stone-senku-ishigami-uhdpaper.com-4K-9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
